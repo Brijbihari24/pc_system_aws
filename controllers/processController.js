@@ -58,14 +58,14 @@ const createProcessesAutomatically = async () => {
 };
 
 //only on weekdays
-cron.schedule('0 0 * * 1-5', async () => {
-    createProcessesAutomatically();
-    // syncDatabase();
-    console.log(`Job ran (Mon–Fri at 12:00 AM) - ${new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' })}`);
-}, {
-    scheduled: true,
-    timezone: 'Asia/Kolkata',
-});
+// cron.schedule('0 0 * * 1-5', async () => {
+//     createProcessesAutomatically();
+//     // syncDatabase();
+//     console.log(`Job ran (Mon–Fri at 12:00 AM) - ${new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' })}`);
+// }, {
+//     scheduled: true,
+//     timezone: 'Asia/Kolkata',
+// });
 
 // cron.schedule('0 0 * * *', async () => {
 //     createProcessesAutomatically();
